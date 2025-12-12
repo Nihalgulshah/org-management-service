@@ -43,6 +43,18 @@ Create a .env file if required:
 MONGO_URI=mongodb://localhost:27017
 DB_NAME=org_management
 
+## API Documentation
+
+FastAPI automatically generates interactive API documentation.
+
+Swagger UI (Interactive API testing):
+http://127.0.0.1:8000/docs
+
+ReDoc (Structured API reference):
+http://127.0.0.1:8000/redoc
+
+Open the above URLs in your browser while the server is running to explore all API endpoints, request/response models, and authentication flows.
+
 ## Code Overview
 
 main.py:
