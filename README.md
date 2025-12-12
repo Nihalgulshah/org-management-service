@@ -35,17 +35,6 @@ assignment/
 - MongoDB running locally on port 27017 or a remote MongoDB URI
 - pip package manager
 
-## Installation
-
-Clone the repository:
-
-git clone https://github.com/Nihalgulshah/org-management-service.git
-cd org-management-service
-
-Install dependencies:
-
-pip install fastapi uvicorn motor pydantic passlib[bcrypt] python-jose python-multipart
-
 
 ## Environment Variables (Optional)
 
