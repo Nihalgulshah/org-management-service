@@ -1,4 +1,4 @@
-# Org Management Service
+# Organization Management Service
 
 A backend service built using FastAPI for managing organizations, users, and authentication. This project demonstrates API design, service-layer architecture, MongoDB integration using Motor, and Pydantic based request and response models.
 
