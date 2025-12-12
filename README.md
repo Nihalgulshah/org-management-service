@@ -46,20 +46,6 @@ Install dependencies:
 
 pip install fastapi uvicorn motor pydantic passlib[bcrypt] python-jose python-multipart
 
-## Running the Server
-
-uvicorn main:app --reload
-
-The server will start at:
-http://127.0.0.1:8000
-
-## API Documentation
-
-Swagger UI:
-http://127.0.0.1:8000/docs
-
-ReDoc:
-http://127.0.0.1:8000/redoc
 
 ## Environment Variables (Optional)
 
