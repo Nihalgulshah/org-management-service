@@ -1,25 +1,92 @@
-Prerequisites
-Python 3.8+
+# Org Management Service
 
-MongoDB running locally on port 27017
+A backend service built using FastAPI for managing organizations, users, and authentication. This project demonstrates API design, service-layer architecture, MongoDB integration using Motor, and Pydantic based request and response models.
 
-Steps
-Clone the repository
+## Features
 
-Bash
+- FastAPI-based RESTful backend
+- MongoDB integration using Motor (asynchronous driver)
+- User registration and authentication workflow
+- Modular service architecture
+- Pydantic models for validation
+- Clean separation of concerns between models, service, and API layers
+- Easily extendable structure for additional endpoints
 
-git clone [https://github.com/your-repo/org-management-service.git](https://github.com/your-repo/org-management-service.git)
+## Technology Stack
+
+- Python 3.8+
+- FastAPI
+- MongoDB
+- Motor
+- Pydantic
+- Uvicorn
+
+## Project Structure
+
+assignment/
+  main.py
+  models.py
+  service.py
+  README.md
+
+## Prerequisites
+
+- Python 3.8 or higher
+- MongoDB running locally on port 27017 or a remote MongoDB URI
+- pip package manager
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/Nihalgulshah/org-management-service.git
 cd org-management-service
-Install Dependencies
 
-Bash
+Install dependencies:
 
 pip install fastapi uvicorn motor pydantic passlib[bcrypt] python-jose python-multipart
-Run the Server
 
-Bash
+## Running the Server
 
 uvicorn main:app --reload
-Access Documentation
 
-Open your browser to http://127.0.0.1:8000/docs to view the interactive Swagger UI.
+The server will start at:
+http://127.0.0.1:8000
+
+## API Documentation
+
+Swagger UI:
+http://127.0.0.1:8000/docs
+
+ReDoc:
+http://127.0.0.1:8000/redoc
+
+## Environment Variables (Optional)
+
+Create a .env file if required:
+
+MONGO_URI=mongodb://localhost:27017
+DB_NAME=org_management
+
+## Code Overview
+
+main.py:
+Initializes FastAPI application and routes.
+
+models.py:
+Defines Pydantic models for validation and API schemas.
+
+service.py:
+Contains business logic and MongoDB operations using Motor.
+
+## Future Enhancements
+
+- JWT-based authentication
+- Organization role management
+- Pagination and filtering
+- Docker support
+- Deployment on Render, Railway, or AWS
+
+## License
+
+This project is available under the MIT License.
